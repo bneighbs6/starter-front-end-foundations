@@ -13,6 +13,142 @@
   </head>
 
   <body>
-    <main></main>
+    <main>
+<!-- Main -->
+<!--Go Look at HTML Forms Lesson for ways to change these form items-->
+<!-- Forms -->
+      <form>
+        <!--Full Name Text Field-->
+        <!--FieldSet around Name and Zip Code-->
+        <fieldset>
+          <!-- Legend is like a title for fieldset -->
+          <legend>Shipping Information</legend>
+          <div>
+            <label for="name">Full Name:</label>
+            <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your full name"
+          />
+          </div>
+          <!--Zip Code Text Field-->
+          <div>
+            <label for="location">Zipcode:</label>
+            <input
+              id="location"
+              type="text"
+              name="zipcode"
+              autofocus="on"
+              required 
+              maxlength="5"
+              placeholder="Shipping Zip Code"
+            />
+          </div>
+        </fieldset>
+          <!-- Password Field -->
+          <div>
+            <label for="password">Password:</label>
+            <input
+              id ="password"
+              type="password"
+              name="password"
+              minlength="8"
+              />
+          </div>
+
+          <!-- Radio Buttons -->
+          <div>
+            <h2>Favorite Color:</h2>
+            <!--Red-->
+            <div>
+              <input id="red" name="color" type="radio" value="red" />
+              <label for="red">Red</label>
+            </div>
+            <!--Blue-->
+            <div>
+              <input id="blue" name="color" type="radio" value="blue" />
+              <label for="blue">Blue</label>
+            </div>
+            <!--White-->
+            <div>
+              <input id="white" name="color" type="radio" value="white" />
+              <label for="white">White</label>
+            </div>
+          </div>
+
+
+
+          <!--Checkboxes-->
+          <div>
+            <h2>Choose your monster's features:</h2>
+            <div>
+              <input name="scales" type="checkbox" id="scales" />
+              <label for="scales">Scales</label>
+            </div>
+            <div>
+              <input name="horns" type="checkbox" id="horns" />
+              <label for="horns">Horns</label>
+            </div>
+            <div>
+              <input name="wings" type="checkbox" id="wings" />
+              <label for="wings">Wings</label>
+            </div>
+          </div>
+
+          <!-- Drop-down List -->
+          <div>
+            <label for="fonts">Choose a font:</label>
+            <select name="fonts" id="fonts" size="1">
+              <option value="arial">Arial</option>
+              <option value="times">Times New Roman</option>
+              <option value="comicsans">Comic Sans</option>
+              <option value="papyrus">Papyrus</option>
+            </select>
+          </div>
+
+        
+
+
+
+        <!--Text Area-->
+        <div>
+          <label for="form-message">Your message:</label>
+          <textarea
+            id="form-message"
+            name="message"
+            autofocus="on"
+            required
+            maxlength="200"
+            placeholder="How can I help you?"
+          ></textarea>
+        </div>
+
+        <!-- Patterns: Validating Phone Number -->
+<!-- Complete list of Patterns on HTML5Pattern-->
+<div>
+  <label for="phone">Phone #:</label>
+  <input
+    id="phone"
+    type="text"
+    name="phone"
+    pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+    placeholder="xxx-xxx-xxxx"
+  />
+</div>
+
+
+        <!-- Submit and Reset Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+
+
+      </form>
+
+
+
+<!-- Main -->
+    </main>
   </body>
 </html>
